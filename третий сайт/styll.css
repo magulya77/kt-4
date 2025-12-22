@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #ffffff; 
+    background-color: #0a0a0a; 
+    padding-top: 60px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #ff3b00; 
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color:white; 
+}
+
+.hero {
+    background: #1a1a1a;
+    padding: 150px 0 100px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: white; 
+}
+
+.services {
+    padding: 80px 0;
+    background-color: #0a0a0a;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: white; 
+    margin-bottom: 15px;
+}
+
+
+
+.service-card {
+    background-color:black; 
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid ;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: red; 
+}
+
+.footer {
+    background-color: black;
+    color: red;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.footer .container {
+    text-align: center;
+}
+
+
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero {
+        padding: 120px 0 80px;
+    }
+    .hero h1 {
+        font-size: 28px;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+    .section-title h2 {
+        font-size: 26px;
+    }
+    .service-card {
+        padding: 20px;
+    }
+    .logo {
+        font-size: 20px;
+    }
+}
